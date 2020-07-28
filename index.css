@@ -4,37 +4,29 @@ body{
 }
 .info{
     display: grid;
-    grid-template-columns: 250px 250px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
 }
 .Pro{
-    width: 450px;
-    text-align: justify;
     grid-column: 2/ 3;
     grid-row: 1 / 2;
 }
 .Care{
-    text-align: justify;
     list-style-position: inside;
     grid-column: 5 / 5;
     grid-row: 1 / 1;
 }
-.Care > ul li{
-   left: 40px;
-   width: 300px;
-}
 .Ski{
-    text-align: justify;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 .Reach{
-   width: 350px;
-    text-align: justify;
+    
     grid-column: 2 / 3;
     grid-row: 3 / 3;
 }
 .Edu{
-    text-align: justify;
+    
     grid-column: 5 / 5  ;
     grid-row: 3 / 3;
 }
@@ -120,9 +112,7 @@ body{
 /*------- MOBILE -------*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #color{
-        align-items: center;
-        size: 100% !important;
-        justify-content: center;
+        width: 100%;
     }
     #barrav{
         display: none;
@@ -132,14 +122,14 @@ body{
     }
     .Pro{
         text-align: center;
-        size: 100%;
+        align-items: center;
         justify-content: center;
         grid-column: 1 / 1;
         grid-row: 1 / 1;
     }
     .Care{
         text-align: center;
-        size: 100%;
+        align-items: center;
         justify-content: center;
         grid-column: 1 / 1;
         grid-row: 2 / 2;
@@ -147,21 +137,21 @@ body{
     
     .Ski{
         text-align: center;
-        size: 100%;
+        align-items: center;
         justify-content: center;
         grid-column: 1 / 1;
         grid-row: 3 / 3;
     }
     .Reach{
         text-align: center;
-        size: 100%;
+        align-items: center;
         justify-content: center;
         grid-column: 1 / 1;
         grid-row: 4 / 4;
     }
     .Edu{
         text-align: center;
-        size: 100%;
+        align-items: center;
         justify-content: center;
         grid-column: 1 / 1;
         grid-row: 5 / 5;
@@ -170,42 +160,71 @@ body{
 /*------ TABLET ------*/
 @media screen and (min-width: 768px) and (max-width: 1224px) {
     #color{
-        size: 100% !important;
+        size: 100%;
+    }
+    #barrav{
+        display:none;
+    }
+    #barrah{
+        display:none;
     }
     .Pro{
         text-align: center;
-        size: 100%;
-        justify-content: center;
         grid-column: 1 / 1;
         grid-row: 1 / 1;
     }
     .Care{
-        width: 768px;
         text-align: center;
         grid-column: 1 / 1;
         grid-row: 2 / 2;
     }
     .Care > ul li{
-       left: 40px;
-       width: 680px;
+       text-align: center;
     }
     .Ski{
-        width: 768px;
         text-align: center;
         grid-column: 1 / 1;
         grid-row: 3 / 3;
     }
     .Reach{
-        width: 768px;
         text-align: center;
         grid-column: 1 / 1;
         grid-row: 4 / 4;
     }
     .Edu{
-        width: 768px;
         text-align: center;
         grid-column: 1 / 1;
         grid-row: 5 / 5;
     }
 }
-
+/*-----DESKTOP Y + ---------*/
+@media screen and (min-width: 1224px){
+    #color{
+        size: 100%;
+    }
+    .Pro{
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .Care{
+        text-align: center;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    .Ski{
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    .Reach{
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+    .Edu{
+        text-align: center;
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+}
