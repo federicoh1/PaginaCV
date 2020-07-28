@@ -1,0 +1,211 @@
+/*--------------- ENCASILLAR (USANDO GRID) ----------------*/
+body{
+    width: 100%;
+}
+.info{
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+.Pro{
+    width: 450px;
+    text-align: justify;
+    grid-column: 2/ 3;
+    grid-row: 1 / 2;
+}
+.Care{
+    text-align: justify;
+    list-style-position: inside;
+    grid-column: 5 / 5;
+    grid-row: 1 / 1;
+}
+.Care > ul li{
+   left: 40px;
+   width: 300px;
+}
+.Ski{
+    text-align: justify;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.Reach{
+   width: 350px;
+    text-align: justify;
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+.Edu{
+    text-align: justify;
+    grid-column: 5 / 5  ;
+    grid-row: 3 / 3;
+}
+
+/*------------------ PRINCIPAL Y IMAGEN -----------------*/
+#color{
+    z-index: 0;
+    background-color: #ced7df;
+    height: 200px;
+}
+#myinfo{
+    display:flex;
+    justify-content: center;
+}
+#center{
+    text-align: center;
+}
+#info-nombre{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+    color: gray ;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+#img{
+    width: 220px;
+    height: 220px;
+    margin-top: -80px;
+    z-index: 1;
+}
+#barrah{
+    width: 900px;
+    border-top: 2px solid #ced7df;
+    opacity: 0.7;
+}
+#barrav{
+    opacity: 0.7;
+    border-top: 0px;
+    border-left: 2px solid #ced7df;
+    height: 900px;
+    position: absolute;
+    left: 50%;
+
+}
+/*------------- ESTILO LETRAS Y FONTS -------------*/
+#nombre{
+    font-size: 38px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    
+    
+}
+.info-menu {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+    color: gray ;
+    font-size: 18px;
+    letter-spacing: 4px;
+   
+}
+.text{
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0px;
+    
+}
+.bolt{
+    margin-bottom: -20px;
+    font-weight: bold;
+}
+.text-info > li{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+}
+
+.text-info{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+/*------ RESPONSIVE DESIGN ---------*/
+
+/*------- MOBILE -------*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #color{
+        align-items: center;
+        size: 100% !important;
+        justify-content: center;
+    }
+    #barrav{
+        display: none;
+    }
+    #barrah{
+        display: none;
+    }
+    .Pro{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .Care{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    
+    .Ski{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    .Reach{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+    .Edu{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+}
+/*------ TABLET ------*/
+@media screen and (min-width: 768px) and (max-width: 1224px) {
+    #color{
+        size: 100% !important;
+    }
+    .Pro{
+        text-align: center;
+        size: 100%;
+        justify-content: center;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .Care{
+        width: 768px;
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    .Care > ul li{
+       left: 40px;
+       width: 680px;
+    }
+    .Ski{
+        width: 768px;
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    .Reach{
+        width: 768px;
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+    .Edu{
+        width: 768px;
+        text-align: center;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+}
+
