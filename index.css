@@ -112,7 +112,7 @@ body{
 /*------- MOBILE -------*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #color{
-        width: 100%;
+        size: 100%;
     }
     #barrav{
         display: none;
